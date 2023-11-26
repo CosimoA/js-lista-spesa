@@ -13,9 +13,9 @@ while (i < arreySpesa.length) {
     console.log(alimento);
     i++;
     // Creo il List Item da inserire nella lista
-
+    const voceAlimentoLi = document.createElement("li");
     // Inserico dentro LI lelemento array salvato
-
+    voceAlimentoLi.append(lista);
     // Inserco il LI nella UL selezionata ad inizio script
 }
     
