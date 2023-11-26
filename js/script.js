@@ -2,7 +2,7 @@
 
 
 // Selezionare elemento lista in HTML
-const lista = document.querySelector("lista");
+const lista = document.querySelector(".lista");
 // Definisco la lista della spesa preesistende 
 const arreySpesa = ["sedano", "carote", "cipolle", "riso basmati", "funghi porcini", "burro", "grana padano"];
 // Scorro la lista della spesa
@@ -10,12 +10,14 @@ let i = 0;
 while (i < arreySpesa.length) {
     // Mi salvo ogni elemento della lista
     let alimento = arreySpesa[i];
-    console.log(alimento);
+    // console.log(alimento);
     i++;
     // Creo il List Item da inserire nella lista
     const voceAlimentoLi = document.createElement("li");
     // Inserico dentro LI lelemento array salvato
-    voceAlimentoLi.append(lista);
+    voceAlimentoLi.append(alimento);
+    // console.log(voceAlimentoLi);
     // Inserco il LI nella UL selezionata ad inizio script
+    lista.append(voceAlimentoLi);
 }
     
